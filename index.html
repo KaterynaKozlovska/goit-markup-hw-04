@@ -11,7 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
@@ -21,7 +24,8 @@
       <div class="container main-nav">
         <nav class="page-navigation">
           <a href="./index.html" lang="en" class="logo link">
-            <span class="logo-element">Web</span>Studio</a>
+            <span class="logo-element">Web</span>Studio</a
+          >
           <ul class="menu list">
             <li class="menu-item link">
               <a href="./index.html" class="menu-link link current"> Студія</a>
@@ -34,65 +38,90 @@
             </li>
           </ul>
         </nav>
-        
+
         <ul class="contact link list">
           <li class="contact-list">
-            <span>
-              <svg >
+            <div class="contact-group">
+              <svg class="contact-icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
-            </span>
-            <a href="mailto:info@devstudio.com" class="contact-link link"> info@devstudio.com </a>
+              <a href="mailto:info@devstudio.com" class="contact-link link"> info@devstudio.com </a>
+            </div>
           </li>
           <li class="contact-list">
-            <a href="tel:+380961111111" class="contact-link link">+38 096 111 11 11</a>
+            <div class="contact-group">
+              <svg class="contact-icon" width="10" height="16">
+                <use href="./images/icons.svg#icon-smartphone"></use>
+              </svg>
+              <a href="tel:+380961111111" class="contact-link link">+38 096 111 11 11</a>
+            </div>
           </li>
         </ul>
       </div>
-     
     </header>
 
     <!--MAIN-->
     <main>
       <section class="hero section">
-       <div class="container">
-        <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-        <button type="button" class="hero-button">Замовити послугу</button>
-       </div>
+        <div class="container">
+          <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
+          <button type="button" class="hero-button">Замовити послугу</button>
+        </div>
       </section>
 
       <section class="benefits section">
-        <div class="container"><h2 class="visually-hidden">Наші переваги</h2>
-        <ul class="benefits-list">
-          <li class="list">
-            <h3 class="benefits-list-title">УВАГА ДО ДЕТАЛЕЙ</h3>
-            <p class="benefits-list-description">
-              Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
-            </p>
-          </li>
-        
-          <li class="list">
-            <h3 class="benefits-list-title">ПУНКТУАЛЬНІСТЬ</h3>
-            <p class="benefits-list-description">
-              Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
-            </p>
-          </li>
-        
-          <li class="list">
-            <h3 class="benefits-list-title">ПЛАНУВАННЯ</h3>
-            <p class="benefits-list-description">
-              Так само консультація з широким активом значною мірою зумовлює.
-            </p>
-          </li>
-        
-          <li class="list">
-            <h3 class="benefits-list-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-            <p class="benefits-list-description">
-              Значимість цих проблем настільки очевидна, що реалізація планових завдань.
-            </p>
-          </li>
-        </ul>
-      </div>
+        <div class="container">
+          <h2 class="visually-hidden">Наші переваги</h2>
+          <ul class="benefits-list">
+            <li class="list">
+              <div class="benefits-img">
+                <svg class="benefits-icon" width="70" height="70">
+                  <use href="./images/icons.svg#icon-antenna"></use>
+                </svg>
+              </div>
+              <h3 class="benefits-list-title">УВАГА ДО ДЕТАЛЕЙ</h3>
+              <p class="benefits-list-description">
+                Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
+              </p>
+            </li>
+
+            <li class="list">
+              <div class="benefits-img">
+                <svg class="benefits-icon" width="70" height="70">
+                  <use href="./images/icons.svg#icon-clock"></use>
+                </svg>
+              </div>
+              <h3 class="benefits-list-title">ПУНКТУАЛЬНІСТЬ</h3>
+              <p class="benefits-list-description">
+                Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
+              </p>
+            </li>
+
+            <li class="list">
+              <div class="benefits-img">
+                <svg class="benefits-icon" width="70" height="70">
+                  <use href="./images/icons.svg#icon-diagram"></use>
+                </svg>
+              </div>
+              <h3 class="benefits-list-title">ПЛАНУВАННЯ</h3>
+              <p class="benefits-list-description">
+                Так само консультація з широким активом значною мірою зумовлює.
+              </p>
+            </li>
+
+            <li class="list">
+              <div class="benefits-img">
+                <svg class="benefits-icon" width="70" height="70">
+                  <use href="./images/icons.svg#icon-astronaut"></use>
+                </svg>
+              </div>
+              <h3 class="benefits-list-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+              <p class="benefits-list-description">
+                Значимість цих проблем настільки очевидна, що реалізація планових завдань.
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <section class="work section">
@@ -103,10 +132,20 @@
               <img src="./images/img-1.jpg" alt="Розробник пише код" width="370" height="294" />
             </li>
             <li class="list">
-              <img src="./images/img-2.jpg" alt="Людина відповідає в чатах" width="370" height="294" />
+              <img
+                src="./images/img-2.jpg"
+                alt="Людина відповідає в чатах"
+                width="370"
+                height="294"
+              />
             </li>
             <li class="list">
-              <img src="./images/img-3.jpg" alt="Людина вибирає гаму кольорів" width="370" height="294" />
+              <img
+                src="./images/img-3.jpg"
+                alt="Людина вибирає гаму кольорів"
+                width="370"
+                height="294"
+              />
             </li>
           </ul>
         </div>
@@ -117,31 +156,55 @@
           <h2 class="title">Наша команда</h2>
           <ul class="team-list">
             <li class="list">
-              <img src="./images/photo-ihor.jpg" alt="Усміхнений чоловік в окулярах" class="team-photo" width="270" height="260" />
+              <img
+                src="./images/photo-ihor.jpg"
+                alt="Усміхнений чоловік в окулярах"
+                class="team-photo"
+                width="270"
+                height="260"
+              />
               <div class="team-descr">
                 <h3 class="name">Ігор Дем'яненко</h3>
                 <p lang="en" class="position">Product Designer</p>
               </div>
             </li>
             <li class="list">
-              <img src="./images/photo-olha.jpg" alt=" Усміхнена жінка в окулярах" class="team-photo" width="270" height="260" />
+              <img
+                src="./images/photo-olha.jpg"
+                alt=" Усміхнена жінка в окулярах"
+                class="team-photo"
+                width="270"
+                height="260"
+              />
               <div class="team-descr">
-<h3 class="name">Ольга Рєпіна</h3>
-<p lang="en" class="position">Frontend Developer</p>
+                <h3 class="name">Ольга Рєпіна</h3>
+                <p lang="en" class="position">Frontend Developer</p>
               </div>
             </li>
             <li class="list">
-              <img src="./images/photo-mukola.jpg" alt="Чоловік в окулярах" class="team-photo" width="270" height="260" />
+              <img
+                src="./images/photo-mukola.jpg"
+                alt="Чоловік в окулярах"
+                class="team-photo"
+                width="270"
+                height="260"
+              />
               <div class="team-descr">
-<h3 class="name">Микола Тарасов</h3>
-<p lang="en" class="position">Marketing</p>
+                <h3 class="name">Микола Тарасов</h3>
+                <p lang="en" class="position">Marketing</p>
               </div>
             </li>
             <li class="list">
-              <img src="./images/photo-mykhailo.jpg" alt="Усміхнений чоловік в окулярах" class="team-photo" width="270" height="260" />
+              <img
+                src="./images/photo-mykhailo.jpg"
+                alt="Усміхнений чоловік в окулярах"
+                class="team-photo"
+                width="270"
+                height="260"
+              />
               <div class="team-descr">
-<h3 class="name">Михайло Єрмаков</h3>
-<p lang="en" class="position">UI Designer</p>
+                <h3 class="name">Михайло Єрмаков</h3>
+                <p lang="en" class="position">UI Designer</p>
               </div>
             </li>
           </ul>
@@ -153,13 +216,19 @@
     <footer class="footer">
       <div class="container">
         <a href="./index.html" lang="en" class="logo link logo-footer">
-          <span class="logo-element">Web</span><span class="logo-element-white">Studio</span></a>
+          <span class="logo-element">Web</span><span class="logo-element-white">Studio</span></a
+        >
         <address>
           <ul class="menu-address">
             <li class="list">
-              <a href="https://goo.gl/maps/QuhDT7TjbHu4BWk88" target="_blank" rel="noopener noreferrer nofollow"
-                class="link address">
-                м. Київ, пр-т Лесі Українки, 26</a>
+              <a
+                href="https://goo.gl/maps/QuhDT7TjbHu4BWk88"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                class="link address"
+              >
+                м. Київ, пр-т Лесі Українки, 26</a
+              >
             </li>
             <li class="list">
               <a href="mailto:info@devstudio.com" class="address-contact link">
